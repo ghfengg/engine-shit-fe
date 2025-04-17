@@ -14,11 +14,21 @@
   width: 100%;
   z-index: 10;
   box-sizing: border-box;
+  height: 70px;
 
   .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #fff;
+    position: relative;
+    height: 70px;
+    width: 200px;
+
+    img {
+      position: absolute;
+      height: 120px;
+      width: 90%; // 修改为100%填充容器宽度
+      top: 60%;
+      transform: translateY(-50%);
+      left: 0; // 确保图片左对齐
+    }
   }
 
   .navLinks {

@@ -10,6 +10,8 @@ import battle2 from '@/assets/battle/battle2.jpeg';
 import battle3 from '@/assets/battle/battle3.jpeg';
 import battle4 from '@/assets/battle/battle4.jpeg';
 
+import logo from '@/assets/logo.png';
+
 import greenTeck from '@/assets/judges/gt.jpg';
 import mrWiggles from '@/assets/judges/MrWiggles.jpg';
 import pete from '@/assets/judges/pete.jpg';
@@ -76,7 +78,9 @@ const HomePage: React.FC = () => {
     <div className={styles.container}>
       {/* 顶部导航 */}
       <nav className={styles.navbar}>
-        <div className={styles.logo}>Engine Shit</div>
+        <div className={styles.logo}>
+          <img src={logo} alt="Engine Shit" />
+        </div>
         <div className={styles.navLinks}>
           <a href="#">About Us</a>
           <a href="#">Battle Culture</a>
