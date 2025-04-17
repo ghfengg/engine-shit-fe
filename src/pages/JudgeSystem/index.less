@@ -1,0 +1,134 @@
+.container {
+  padding: 24px;
+  background: #f0f2f5;
+  min-height: 100vh;
+}
+
+.pageTitle {
+  text-align: center;
+  margin-bottom: 32px !important;
+}
+
+.battleContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 10%);
+}
+
+.playersRow {
+  margin-bottom: 48px;
+}
+
+.playerCard {
+  margin: 0 24px;
+  border: none;
+  background: transparent;
+
+  :global {
+    .ant-card-body {
+      padding: 24px;
+    }
+  }
+}
+
+.playerInfo {
+  text-align: center;
+
+  .ant-avatar {
+    margin-bottom: 16px;
+  }
+
+  h3 {
+    margin: 0;
+  }
+}
+
+.balanceContainer {
+  padding: 0 48px;
+  margin-top: 48px;
+}
+
+.resultIndicator {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.battleSlider {
+  :global {
+    .ant-slider-rail {
+      height: 16px;
+      background: #1890ff; // 修改为蓝色
+      border-radius: 8px;
+    }
+
+    .ant-slider-track {
+      height: 16px;
+      background: #ff4d4f; // 修改为红色
+      border-radius: 8px;
+    }
+
+    .ant-slider-handle {
+      width: 32px;
+      height: 32px;
+      margin-top: -8px;
+      opacity: 0; // 隐藏原始滑块，但保留功能
+      cursor: pointer;
+
+      &:hover,
+      &:active,
+      &:focus {
+        border-color: transparent;
+        box-shadow: none;
+        background: transparent;
+      }
+    }
+
+    .ant-slider-mark-text {
+      font-weight: bold;
+      color: #666;
+      margin-top: 16px;
+    }
+  }
+}
+
+.sliderWrapper {
+  padding: 0 24px;
+  position: relative;
+}
+
+.sliderHandle {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  color: #ffd700;
+  background: #fff;
+  border-radius: 50%;
+  padding: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 20%);
+  pointer-events: none;
+  z-index: 1;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 30%);
+  }
+}
+
+.playerRed {
+  h3 {
+    color: #ff4d4f;
+  }
+}
+
+.playerBlue {
+  h3 {
+    color: #1890ff;
+  }
+}
