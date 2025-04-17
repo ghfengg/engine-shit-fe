@@ -60,6 +60,11 @@ const HomePage: React.FC = () => {
     { name: 'Mr Wiggles', avatar: mrWiggles, title: 'Breaking Pioneer' },
     { name: 'Popin Pete', avatar: pete, title: 'Electric Boogaloo' },
     { name: 'Popping C', avatar: poppinC, title: 'Popping' },
+    { name: 'Popping C', avatar: poppinC, title: 'Popping' },
+    { name: 'Popin Pete', avatar: pete, title: 'Electric Boogaloo' },
+    { name: 'Mr Wiggles', avatar: mrWiggles, title: 'Breaking Pioneer' },
+    { name: 'Salah', avatar: salah, title: 'Electric Boogaloo' },
+    { name: 'GreenTeck', avatar: greenTeck, title: 'Popping Master' },
   ];
 
   const handleBeforeChange = (oldIndex: number, newIndex: number) => {
